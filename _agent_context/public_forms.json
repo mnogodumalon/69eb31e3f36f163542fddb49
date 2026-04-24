@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "mitarbeiter",
+      "app_id": "69eb31ca00a109d9305cc8f7",
+      "path": "/rest/apps/69eb31ca00a109d9305cc8f7/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "personalnummer",
+        "abteilung",
+        "beschaeftigungsart",
+        "telefon",
+        "email",
+        "eintrittsdatum",
+        "bemerkungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Mitarbeiter — Formular"
+    },
+    {
+      "entity": "schichtdefinition",
+      "app_id": "69eb31cfd2b8634d5207588f",
+      "path": "/rest/apps/69eb31cfd2b8634d5207588f/records",
+      "allowed_fields": [
+        "schichtname",
+        "kuerzel",
+        "schichtbeginn",
+        "schichtende",
+        "schichttyp",
+        "schichtbeschreibung"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Schichtdefinition — Formular"
+    },
+    {
+      "entity": "schichtplanung",
+      "app_id": "69eb31d0cef13ab397a4d85f",
+      "path": "/rest/apps/69eb31d0cef13ab397a4d85f/records",
+      "allowed_fields": [
+        "datum",
+        "arbeitsbereich",
+        "status",
+        "notizen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Schichtplanung — Formular"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+- Mitarbeiter (mitarbeiter): vorname[string/text], nachname[string/text], personalnummer[string/text], abteilung[string/text], beschaeftigungsart[lookup/select], telefon[string/tel], email[string/email], eintrittsdatum[date/date], bemerkungen[string/textarea]
+- Schichtdefinition (schichtdefinition): schichtname[string/text], kuerzel[string/text], schichtbeginn[string/text], schichtende[string/text], schichttyp[lookup/select], schichtbeschreibung[string/textarea]
+- Schichtplanung (schichtplanung): datum[date/date], mitarbeiter_ref[applookup/select], schicht_ref[applookup/select], arbeitsbereich[string/text], status[lookup/select], notizen[string/textarea]
+  → mitarbeiter_ref links to app_id 69eb31ca00a109d9305cc8f7
+  → schicht_ref links to app_id 69eb31cfd2b8634d5207588f
