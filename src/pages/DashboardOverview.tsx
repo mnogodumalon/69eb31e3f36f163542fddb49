@@ -142,6 +142,19 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
+      {/* Sentry Test Button */}
+      <div className="flex items-center gap-2 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+        <IconAlertCircle size={18} className="text-amber-600 shrink-0" />
+        <span className="text-sm text-amber-700 flex-1">Sentry-Test: Klicke den Button um einen Test-Fehler auszulösen.</span>
+        <Button
+          variant="outline"
+          size="sm"
+          className="border-amber-400 text-amber-700 hover:bg-amber-100"
+          onClick={() => { throw new Error('Sentry Test Error: Absichtlicher Testfehler vom Dashboard'); }}
+        >
+          Fehler auslösen
+        </Button>
+      </div>
       {/* KPI Row */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
